@@ -1,0 +1,116 @@
+/*
+Theme Name: Twenty Twenty-Five Child
+Theme URI: https://wordpress.org/themes/twentytwentyfive/
+Description: Child theme for Twenty Twenty-Five
+Author: Brayden Burke
+Template: twentytwentyfive
+Version: 1.0
+Text Domain: twentytwentyfive-child
+*/
+
+/* Global variables */
+:root {
+  --site-bg: #fffaf4;
+  --site-text: #2b2b2b;
+  --site-primary: #5b7db1;
+  --site-accent: #f2a65a;
+  --site-light: #f6efe6;
+  --site-border: #e6ddd2;
+  --heading-font: "Poppins", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+}
+
+/* Base */
+body {
+  background-color: var(--site-bg);
+  color: var(--site-text);
+  font-family: var(--body-font);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--site-text);
+}
+
+/* Links */
+a {
+  color: var(--site-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--site-accent);
+}
+
+/* Buttons */
+.wp-block-button__link,
+button,
+input[type="submit"] {
+  background-color: var(--site-primary);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 12px 20px;
+  border: none;
+  transition: 0.2s ease;
+}
+
+.wp-block-button__link:hover,
+button:hover,
+input[type="submit"]:hover {
+  background-color: var(--site-accent);
+  color: #ffffff;
+}
+
+/* Header */
+header.wp-block-template-part,
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--site-border);
+}
+
+/* Footer */
+footer.wp-block-template-part,
+.site-footer {
+  background-color: var(--site-light);
+  border-top: 1px solid var(--site-border);
+}
+
+/* Page sections */
+.wp-block-group {
+  border-radius: 10px;
+}
+
+/* Forms */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--site-border);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--site-text);
+  font-family: var(--body-font);
+}
+
+/* Cards / posts */
+.wp-block-post,
+article {
+  background-color: #ffffff;
+  border: 1px solid var(--site-border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Navigation hover */
+.wp-block-navigation a:hover {
+  color: var(--site-accent);
+}
